@@ -93,5 +93,5 @@ When you are working with time zones, there is also a good plugin to Moment call
 
 Install the dependencies to Moment like so `npm install moment moment-timezone` or `yarn add moment moment-timezone`.
 
-### TDD
+### No TDD this time!
 Since you are moving into new ground with React, you don't have to write tests for this exercise. Instead you should concentrate on understanding the React concepts! You will however learn how to TDD with React very soon...

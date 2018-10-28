@@ -53,8 +53,14 @@ Any other decorational info, e.g. page header, should also go into this componen
 | World Clocks architecture |
 
 ### Mobile
-Exactly how you design your World Clocks app is up to your mob, but the app should be reactive and work equally well on a mobile device such as on the Desktop.
+Exactly how you design your World Clocks app is up to you and your mob, but the app should be reactive and work equally well on a mobile device such as on the Desktop.
 
-| ![Mobile](worldclocks-mobile.png) | ![Desktop](worldclocks-desktop.png) |
-|:---:|:---:|
-| Example of Mobile and Desktop designs |
+<table>
+  <tr>
+    <td><img src="worldclocks-mobile.png"></td>
+    <td><img src="worldclocks-desktop.png"></td>
+  </tr>
+  <tr>
+    <td colspan="2">Example of mobile and desktop designs</td>
+  </tr>
+</table>

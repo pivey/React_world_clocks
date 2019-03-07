@@ -3,7 +3,7 @@
 ## World Clocks 
 
 In this exercise you will create a SPA with a set of independent clocks showing the time from different time zones.
-Each clock should be an independent React components with its own timer.
+Each clock should be an independent React component with its own timer.
 
 ### Generate the project
 Use `create-react-app` to create a new project called `salt-world-clocks`.
@@ -53,7 +53,7 @@ Any other decorational info, e.g. page header, should also go into this componen
 | World Clocks architecture |
 
 ### Mobile
-Exactly how you design your World Clocks app is up to you and your mob, but the app should be reactive and work equally well on a mobile device such as on the Desktop.
+Exactly how you design your World Clocks app is up to you and your mob, but the app should be reactive and work on both mobile and desktop.
 
 <table>
   <tr>
@@ -92,6 +92,8 @@ To use moment you simply call the `moment()` function - or based on some timesta
 When you are working with time zones, there is also a good plugin to Moment called `moment-timezone`. It may just come handy for this exercise ;)
 
 Install the dependencies to Moment like so `npm install moment moment-timezone` or `yarn add moment moment-timezone`.
+
+If you want extra fun, have a look at the different timezones in Australia and French Polynesia.
 
 ### No TDD this time!
 Since you are moving into new ground with React, you don't have to write tests for this exercise. Instead you should concentrate on understanding the React concepts! You will however learn how to TDD with React very soon...

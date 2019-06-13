@@ -25,14 +25,18 @@ function Board(props) {
 
 
 function Clock(props) {
-const [count, setCount] = useState(0); 
+ 
+let [count, setCount] = useState(0); 
 
 useEffect(() => {
-   function timer () {
+   function timer() {
      setTimeout (() => {
-      setCount(count+1);
-    },1000); }
-    timer();
+      setCount(count+=1);
+      console.log(count);
+      timer();
+    },1000); 
+  }
+  timer();
 }, []);
 
   return (
@@ -45,7 +49,7 @@ useEffect(() => {
           <br/>
           {new Date().toLocaleTimeString()}
           <br/>
-          {count}
+          
         </h3>
     </div>
   );

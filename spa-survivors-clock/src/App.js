@@ -1,13 +1,15 @@
 import React, {useEffect, useState} from 'react';
+import moment from 'moment'; 
+import "moment-timezone";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Board citiesObj = {[ 
-      {city:'Stockholm',timeZone:1},
-      {city:'London',timeZone:2},
-      {city:'Tehran',timeZone:3}]}/>
+      {city:'Stockholm', region:'Europe'},
+      {city:'London', region:'Europe'},
+      {city:'Tehran', region:'Asia'}]}/>
     </div>
   );
 }
@@ -32,12 +34,12 @@ useEffect(() => {
    function timer() {
      setTimeout (() => {
       setCount(count+=1);
-      console.log(count);
       timer();
     },1000); 
   }
   timer();
 }, []);
+const cityRegion = props.cityObj.region + '/' + props.cityObj.city; 
 
   return (
     <div className="Clock">
@@ -45,11 +47,8 @@ useEffect(() => {
           {props.cityObj.city}
         </h1>
         <h3>
-          {props.cityObj.timeZone }
-          <br/>
-          {new Date().toLocaleTimeString()}
-          <br/>
-          
+          {moment().tz(cityRegion).format('LTS')}
+          {/* {new Date().toLocaleTimeString()} */}
         </h3>
     </div>
   );

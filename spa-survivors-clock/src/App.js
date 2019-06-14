@@ -33,6 +33,15 @@ function App() {
 }
 
 function Board(props) {
+    let [count,
+        setCount] = useState(0)
+    function timer() {
+        setTimeout(() => {
+            setCount(count + 1);
+            timer();
+        }, 500);
+    }
+    timer();
     return (
         <div className="Board">
             <Clock cityObj={props.citiesObj[0]}/>
@@ -47,20 +56,7 @@ function Board(props) {
 }
 
 function Clock(props) {
-    let [count,
-        setCount] = useState(0)
-    function timer() {
-        setTimeout(() => {
-            setCount(count + 1);
-            timer();
-        }, 500);
-    }
-    timer();
-
     const cityRegion = props.cityObj.region + '/' + props.cityObj.city;
-
-    // document.body.style.background = "url('[INSERT HTTPS IMAGE URL HERE]')";
-
     return (
         <div
             className="clock-flex"

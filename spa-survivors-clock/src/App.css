@@ -1,7 +1,7 @@
 .App {
   box-sizing: border-box;
   padding: 20px;
-  background-color: #1E2749;
+  background-color: rgb(132, 214, 156);
   color: #FAFAFF;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
@@ -33,7 +33,7 @@ h3 {
   background-color: #323F89;
   object-fit: cover;
   border: 3px solid #E4D9FF;
-  border-radius:20px;
+  border-radius: 20px;
 }
 
 /* .clock-flex:nth-child(1) {
@@ -77,8 +77,8 @@ h3 {
   }
 
   .App {
-   padding-top: 30px;
-   padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   /* .clock-flex:nth-child(1) {

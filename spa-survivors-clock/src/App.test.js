@@ -18,13 +18,13 @@ describe('<App />', () => {
   const mockTime = "2014-06-01T12:00:00Z";
   const oldTimeFormat = moment.prototype.format;
 
-  // beforeEach(() =>  {
-  //   moment.prototype.format = () => mockTime;
-  // });
+  beforeEach(() =>  {
+    moment.prototype.format = () => mockTime;
+  });
   
-  // afterEach(() => {
-  //   moment.prototype.format = oldTimeFormat;
-  // });
+  afterEach(() => {
+    moment.prototype.format = oldTimeFormat;
+  });
 
   const citiesObj=[
     {
@@ -35,6 +35,7 @@ describe('<App />', () => {
 
   test('time', () => {
     const board = mount(<Board  citiesObj = {citiesObj}/>);
+    console.log(board.first().find('.time').html());
       const time = board.find('.time').text();    
       expect(time).toEqual(mockTime);
   })

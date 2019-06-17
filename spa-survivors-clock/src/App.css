@@ -1,7 +1,7 @@
 .App {
   box-sizing: border-box;
   padding: 20px;
-  background-color: rgb(132, 214, 156);
+  background-color: #1E409E;
   color: #FAFAFF;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }

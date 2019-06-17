@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import moment from 'moment';
 import "moment-timezone";
 import './App.css';
@@ -44,16 +44,14 @@ function Board(props) {
     timer();
     return (
         <div className="Board">
-            <Clock cityObj={props.citiesObj[0]}/>
-            <Clock cityObj={props.citiesObj[1]}/>
-            <Clock cityObj={props.citiesObj[2]}/>
-            <Clock cityObj={props.citiesObj[3]}/>
-            <Clock cityObj={props.citiesObj[4]}/>
-            <Clock cityObj={props.citiesObj[5]}/>
 
+            {props.citiesObj.map((e, i) => {
+                return <Clock cityObj={e} key={i}/>;
+            })}
+            
         </div>
     )
-}
+}   
 
 function Clock(props) {
     const cityRegion = props.cityObj.region + '/' + props.cityObj.city;

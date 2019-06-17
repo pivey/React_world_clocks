@@ -6,7 +6,7 @@ import Clock from './Clock';
 function Board(props) {
 
 
-    const time = moment(); 
+    const time = moment().format(); 
         
 
     let [count,

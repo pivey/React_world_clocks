@@ -1,5 +1,6 @@
 import React from 'react';
 import "moment-timezone";
+import moment from 'moment';
 
 
 function Clock(props) {
@@ -14,9 +15,7 @@ function Clock(props) {
                 {props.cityObj.city}
             </h1>
             <h3 className="time">
-                {props.clockTime
-                .tz(cityRegion)
-                .format('LTS')}
+                {moment(props.clockTime).tz(cityRegion).format('LTS')}
                 {/* {new Date().toLocaleTimeString()} */}
             </h3>
         </div>

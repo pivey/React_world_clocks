@@ -35,8 +35,8 @@
   "devDependencies": {
     "enzyme": "^3.10.0",
     "enzyme-to-json": "^3.3.5"
-  }, 
-  "setupFiles": ["./src/setupTests.js"]
-  
-
+  },
+  "setupFiles": [
+    "./src/setupTests.js"
+  ]
 }
